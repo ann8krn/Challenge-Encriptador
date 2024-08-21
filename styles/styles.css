@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Tilt+Prism&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --color-primario: #000000;
+    --color-secundario: #1996d4;
+    --color-terciario: #ac306e;
+    --color-cuarto: #ffffff;
+    --color-quinto: #ffe4f7;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-cuarto);
+    position: relative;
+    width: 100%;
+    height: 930px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    padding: 1% 0% 1% 5%;
+    background-color: var(--color-primario);
+}
+.inicio_menu {
+    font-family: "Tourney", sans-serif;
+    text-decoration: none;
+    color: var(--color-terciario);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.inicio_menu:hover{
+    color: var(--color-secundario);
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-cuarto);
+}
+.texto {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 150%;
+    background-color: var(--color-cuarto);
+}
+.texto::placeholder{
+    color: var(--color-terciario);
+}
+.texto:focus, .texto:active {
+    border: none;
+    outline: none;
+}
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+.terminos p {
+    font-family: "Playpen Sans", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: var(--color-primario);
+    opacity: 0.9;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+.btn_encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: var(--color-terciario); /* #3FA2F6*/
+    border-radius: 24px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-cuarto);
+    margin-right: 20px;
+}
+.btn_desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
+    background: var(--color-quinto);
+    border: 1px solid violet;
+    border-radius: 24px;
+    font-family: "Playpen Sans", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-terciario);
+}
+.btn_encriptar:hover, .btn_desencriptar:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+.encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: var(--color-quinto);
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.mensaje_encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+.mensaje_encriptado h2 {
+    width: 60%;
+    font-family: "Playpen Sans", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+}
+.mensaje_encriptado p{
+    width: 80%;
+    font-family: "Playpen Sans", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-primario)
+}
+.imagen {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+.footer {
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    font-family: "Playpen Sans", cursive;
+    font-size: 1rem; 
+    font-weight: 250;
+    width: 100%;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px  0px 0px;
+    flex-wrap: wrap;
+}
+.icon_red {
+    list-style: none;
+}
+.icon {
+    font-size: 30px;
+    display: inline-block;
+    color: var(--color-terciario);
+    margin: 0 15px;
+    transition: 0.5s;
+}
+.icon:hover {
+    transform: translateY(-5px);
+}
+.pie{
+    padding-bottom: 10px;
+}
+@media (max-width: 57.5em) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .encriptar {
+        width: 100%;
+    }
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .terminos {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .terminos p {
+        font-size: 16px;
+    }
+    .botones {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn_encriptar, .btn_desencriptar {
+        width: 48%;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+    .btn_encriptar:hover, .btn_desencriptar:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .encriptado {
+        width: 80%;
+        height: 18%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensaje_encriptado {
+        width: 100%;
+        top: 5%;
+    }
+    .imagen {
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+    .footer{
+        height: 8%;
+    }
+}    
